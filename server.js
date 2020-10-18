@@ -43,6 +43,7 @@ app.post("/api/notes", function(req, res) {
     res.json(savedNotes);
 });
 
+// Delete function
 app.delete("/api/notes/:id", function(req, res) {
     let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     let noteID = req.params.id;

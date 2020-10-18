@@ -46,6 +46,8 @@ Visit deployed project at:
 
 ## Github Pages Link
 
+## Heroku Deployment
+https://notetaker-app-ak.herokuapp.com/
 
 ## Video Link
 Visit demo video at:
