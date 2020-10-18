@@ -31,13 +31,26 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 
 ## Usage
+WHEN in the command line: run npm i
+THEN run: node server.js 'or' npm start
+This should then start ther server running on 3003 PORT
+Control^ C on mac to close ther server
+
 
 ## Screen Shots 
+[!]
+[!]
 
 ## Project Link
+Visit deployed project at:
 
 ## Github Pages Link
 
+
 ## Video Link
+Visit demo video at:
 
 ## Questions
+  * Github Username: Aken00
+  * [User Github](https://github.com/Aken00)
+  * You can reach me at (ajken04@gmail.com)
