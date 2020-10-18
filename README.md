@@ -41,13 +41,10 @@ Control^ C on mac to close ther server
 ![](Images/note-taker-ss1.png)
 ![](Images/note-taker-ss2.png)
 ![](Images/note-taker-ss3.png)
-![](terminal-output1.png)
+![](Images/terminal-output1.png)
 
 ## Project Link
 Visit deployed project at:https://github.com/Aken00/Note-Taker-App
-
-## Github Pages Link
-
 
 ## Heroku Deployment
 Visit heroku at:https://notetaker-app-ak.herokuapp.com/
