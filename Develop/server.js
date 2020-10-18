@@ -1,15 +1,18 @@
 
-const express = require("express");
-const path = require("path");
 const fs = require("fs");
+const path = require("path");
+const express = require("express");
 
-const app = express();
+// Set up varibales for path, app, and directory to point toward /public.
 const port = 3003;
+const app = express();
 const publicDir = path.join(__dirname, "/public");
 
-app.use(express.static('public'));
+// parse incoming string or array data
 app.use(express.urlencoded({extended: true}));
+// parse incoming JSON data
 app.use(express.json());
+app.use(express.static('public'));
 
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(publicDir, "notes.html"));
@@ -40,7 +43,25 @@ app.post("/api/notes", function(req, res) {
     res.json(savedNotes);
 });
 
+app.delete("/api/notes/:id", function(req, res) {
+    let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    let noteID = req.params.id;
+    let newID = 0;
+    console.log(`Deleting note with ID ${noteID}`);
+    savedNotes = savedNotes.filter(currentNote => {
+        return currentNote.id != noteID;
+    })
+    
+    for (currentNote of savedNotes) {
+        currentNote.id = newID.toString();
+        newID++;
+    }
 
+    fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
+    res.json(savedNotes);
+})
+
+// Server Start
 app.listen(port, function() {
     console.log(`Now listening to port ${port}.`);
 });

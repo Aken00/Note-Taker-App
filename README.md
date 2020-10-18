@@ -3,6 +3,7 @@
 
 ## Description 
 
+An app for writing, saving and removing notes. 
 
 
 ## User Story
