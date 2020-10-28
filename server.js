@@ -4,7 +4,7 @@ const path = require("path");
 const express = require("express");
 
 // Set up varibales for path, app, and directory to point toward /public.
-const port = 3003;
+const port = process.env.port;
 const app = express();
 const publicDir = path.join(__dirname, "/public");
 
