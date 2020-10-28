@@ -4,7 +4,7 @@ const path = require("path");
 const express = require("express");
 
 // Set up varibales for path, app, and directory to point toward /public.
-const port = process.env.port;
+const port = process.env.PORT||3003;
 const app = express();
 const publicDir = path.join(__dirname, "/public");
 
@@ -64,5 +64,5 @@ app.delete("/api/notes/:id", function(req, res) {
 
 // Server Start
 app.listen(port, function() {
-    console.log(`Now listening to port ${port}.`);
+    console.log(`Now listening to port ${PORT}.`);
 });
