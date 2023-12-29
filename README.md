@@ -44,7 +44,7 @@ Control^ C on mac to close ther server
 ![](Images/terminal-output1.png)
 
 ## Project Link
-Visit deployed project at:https://github.com/Aken00/Note-Taker-App
+Visit deployed project at:https://github.com/Alexanderkeny10/Note-Taker-App
 
 ## Heroku Deployment
 Visit heroku at:https://notetaker-app-ak.herokuapp.com/
@@ -54,5 +54,5 @@ Visit demo video at:https://drive.google.com/file/d/1xBwSlKQIeqWtO3gw6QaYOq0LGvf
 
 ## Questions
   * Github Username: Aken00
-  * [User Github](https://github.com/Aken00)
+  * [User Github](https://github.com/Alexanderkeny10)
   * You can reach me at (ajken04@gmail.com)
